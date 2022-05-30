@@ -1,0 +1,242 @@
+@font-face {
+    font-family: monster;
+    src: url("../fonts/Montserrat-Medium.otf")
+}
+
+@font-face {
+    font-family: monster-text;
+    src: url("../fonts/Montserrat-Regular.otf")
+}
+
+@font-face {
+    font-family: monster-title;
+    src: url("../fonts/Montserrat-Bold.otf")
+}
+
+@font-face {
+    font-family: monster-min;
+    src: url("../fonts/Montserrat-Light.otf")
+}
+
+@font-face {
+    font-family: logo-font;
+    src: url("../fonts/good-times-rg.ttf")
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: monster;
+    color: white;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.bg-openup {
+    background-color: #061b2e;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bt-social {
+    right: 0px;
+    top: 0px;
+}
+
+#content {
+    position: absolute;
+}
+
+.img-paralax {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 1500px;
+}
+
+#layer {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-alpha {
+    background-color: #ff8f00;
+}
+
+.bg-alpha2 {
+    background-color: #424242;
+}
+
+.bg-white-edit {
+    background-color:rgb(239, 239, 239);
+}
+
+.text-alpha {
+    color: #ff8f00;
+}
+
+.text-white-edit {
+    color: rgb(239, 239, 239);
+}
+
+.desc {
+    font-size: 0.7rem;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.eapps-link {
+    display: none;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-120 {
+    width: 120%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.monster-title {
+    font-family: monster-title;
+}
+
+.monster-min {
+    font-family: monster-min;
+}
+
+.text-title {
+    font-size: 4rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.anim-title {
+    position: relative;
+    animation: openAnimation 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+.anim-bt1 {
+    animation: animBt 2s;
+    animation-delay: 7s;
+    animation-fill-mode: backwards;
+}
+
+.anim-bt2 {
+    animation: animBt 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.bg-author {
+    background-color: whitesmoke;
+}
+
+@keyframes animBt {
+    from {
+        transform: translateY(1000%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes openAnimation {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.desktop-visible { display:none;}
+.mobile-visible { display:none;}
+
+@media screen and (max-device-width: 480px) {
+    body {
+        font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+    }
+
+    .width-img-logo-mb 
+    {    
+        width: 40%;
+    }
+
+    .wb-50 {
+        width: 50%;
+    }
+
+    .hb-50 {
+        height: 50%!important;
+    }
+
+    .button-wpp {
+        position: fixed;
+
+        top: 1400px;
+        z-index: 99;
+    }
+
+    .desktop-visible { display: none; }
+    .mobile-visible { display: block; }
+  }
+
+@media screen and (min-device-width: 480px) {
+    .desktop-visible { display: block; }
+    .mobile-visible { display: none; }
+
+    .button-wpp {
+        position: fixed;
+        top: 10px;
+        z-index: 99;
+    }
+}
+
+
+
